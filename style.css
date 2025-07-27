@@ -36,6 +36,16 @@ html,body{
 .container:hover .image{
   transform: translateY(-100px);
 }
+
+/* .container:hover + #About {
+  display: none;
+} */
+
+.container:hover + #About {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .image img{
   height: 100%;
   width: 100%;
@@ -109,4 +119,18 @@ ul li a{
 }
 .info span{
   color: #1a1a1a;
+}
+
+#About {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  color: black;
+  z-index: 1000;
 }
